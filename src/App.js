@@ -15,9 +15,36 @@ import {
   YoutubeFilled,
 } from "@ant-design/icons";
 
+import NameCard from "./components/NameCard";
+
 function App() {
+
+  // Example Names Array
+  const namesArrayForJuan = [
+    { first: "Dan", lastName: "Douangkesone" },
+    { first: "Juan", lastName: "Lo" },
+    { first: "fart", lastName: "jokes" },
+  ];
+
   return (
     <div className="App">
+
+      {/* Example for Juan */}
+      {/* Remember to use .map() if you need to iterate through things and have something append to the DOM */}
+      {namesArrayForJuan.map((name, index) => {
+        const { first = "", lastName = "" } = name;
+
+        return (
+          <NameCard
+            // When you iterate things on the DOM in react. You need to give it a unique key.
+            // That way react knows which of the items you're trying to do things too. 
+            key={`${first}-${lastName}-${index}`}
+            first={first}
+            lastName={lastName}
+          ></NameCard>
+        );
+      })}
+
       <Space>
         <Menu
           mode="inline"
