@@ -28,8 +28,9 @@ function App() {
 
   return (
     <div className="App">
-      
+
       {/* Example for Juan */}
+      {/* Remember to use .map() if you need to iterate through things and have something append to the DOM */}
       {namesArrayForJuan.map((name, index) => {
         const { first = "", lastName = "" } = name;
 

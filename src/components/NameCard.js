@@ -19,7 +19,7 @@ export default function NameCard(props) {
             fontFamily: "cursive",
           }}
         >
-          Ant Design Card
+          Its a Name Card!
         </div>
       }
     >
@@ -28,6 +28,8 @@ export default function NameCard(props) {
       <br />
       Last Name {lastName}
       <br />
+
+      {/* Here I am showing how to code escape */}
       {`All together now ${first} ${lastName}`}
     </Card>
   );
