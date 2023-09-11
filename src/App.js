@@ -16,6 +16,12 @@ import {
 } from "@ant-design/icons";
 
 function App() {
+  const namesArrayForJuan = [
+    { first: "Dan", lastName: "Douangkesone" },
+    { first: "Juan", lastName: "Lo" },
+    { first: "fart", lastName: "jokes" },
+  ];
+
   return (
     <div className="App">
       <Space>
